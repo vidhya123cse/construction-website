@@ -3,8 +3,11 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def hello():
+def index():
     return render_template('index.html')
+@app.route('/projects')
+def project():
+    return render_template('project.html')
 
 
 
